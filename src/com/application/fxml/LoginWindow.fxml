@@ -18,4 +18,5 @@
     <Button layoutX="160.0" layoutY="150.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="80.0" text="Log in" />
     <Label layoutX="160.0" layoutY="190.0" text="or" />
     <Button layoutX="180.0" layoutY="186.0" mnemonicParsing="false" onAction="#signup" prefWidth="60.0" text="Sign up" />
+   <Label layoutX="5.0" layoutY="228.0" text="Presented by: Samer Al-Sa'dawi" />
 </AnchorPane>
