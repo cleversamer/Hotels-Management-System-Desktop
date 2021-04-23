@@ -1,0 +1,4 @@
+Open "Hotels-Management-System.jar" file to test the application.
+
+ 
+Presented by: Samer Al-Sa'dawi
