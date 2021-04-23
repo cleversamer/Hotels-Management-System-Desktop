@@ -8,8 +8,7 @@ Simple Hotels Management System - JavaFX Application
 4. You can add rooms to the hotel.
 5. You can edit room's info.
 6. You can also change your password.
-
-* And you can do more within main window.
+7. And you can do more within main window.
 * TIP: I made a default account with [admin, admin] login info, you can use it or sign up a new account.
 
 * Illustrative pictures:
