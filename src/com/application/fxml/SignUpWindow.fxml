@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.controllers.SignUpController">
+    <Label layoutX="166.0" layoutY="14.0" text="Sign Up">
+        <font>
+            <Font name="Comic Sans MS Bold" size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="username" layoutX="126.0" layoutY="54.0" promptText="Username"/>
+    <PasswordField fx:id="password" layoutX="126.0" layoutY="91.0" promptText="Password"/>
+    <Slider fx:id="rooms" accessibleText="Rooms" layoutX="73.0" layoutY="131.0" majorTickUnit="10.0" min="10.0"
+            prefHeight="38.0" prefWidth="254.0" showTickLabels="true" showTickMarks="true" value="55.0"/>
+    <Button layoutX="160.0" layoutY="184.0" mnemonicParsing="false" onAction="#signup" prefHeight="25.0"
+            prefWidth="80.0" text="Sign Up"/>
+    <Button layoutX="160.0" layoutY="216.0" mnemonicParsing="false" onAction="#login" prefWidth="80.0" text="Login"/>
+</AnchorPane>
