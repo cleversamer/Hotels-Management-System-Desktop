@@ -57,6 +57,7 @@ public class ReserveController implements Initializable {
             return;
         }
         Data.refreshMainWindow();
+        Data.thereAreChanges = true;
         stage.close();
     }
 }
