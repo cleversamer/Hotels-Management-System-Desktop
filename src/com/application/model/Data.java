@@ -16,7 +16,7 @@ public class Data {
 
     public static Label[] mainLabels = new Label[10];
 
-    public static boolean printingData = true;
+    public static boolean printingData = true, thereAreChanges = false;
 
     public static boolean addHotel(Hotel hotel) {
         String name = hotel.getName().trim();
