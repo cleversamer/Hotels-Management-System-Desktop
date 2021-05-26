@@ -148,6 +148,7 @@ public class MainController implements Initializable {
         ReserveController.load();
         this.reserve.setDisable(true);
         this.checkout.setDisable(false);
+        Data.thereAreChanges = true;
     }
 
     @FXML
@@ -155,6 +156,7 @@ public class MainController implements Initializable {
         clearResults();
         Data.hotel.reserveAll();
         Data.refreshHotelInfo();
+        Data.thereAreChanges = true;
     }
 
     @FXML
@@ -162,6 +164,7 @@ public class MainController implements Initializable {
         clearResults();
         Data.hotel.emptyAll();
         Data.refreshHotelInfo();
+        Data.thereAreChanges = true;
     }
 
     @FXML
@@ -169,6 +172,7 @@ public class MainController implements Initializable {
         clearResults();
         Data.hotel.removeAllRooms();
         Data.refreshHotelInfo();
+        Data.thereAreChanges = true;
     }
 
     @FXML
@@ -177,6 +181,7 @@ public class MainController implements Initializable {
         Data.refreshMainWindow();
         this.reserve.setDisable(false);
         this.checkout.setDisable(true);
+        Data.thereAreChanges = true;
     }
 
     @FXML
