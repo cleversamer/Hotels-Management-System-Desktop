@@ -48,6 +48,11 @@ public class AddRoomsController {
                 this.rooms.setText("");
                 return;
             }
+            if (newRooms > 50) {
+                this.rooms.setText("");
+                AlertsLoader.invalidNumberOfRooms();
+                return;
+            }
         } catch (NumberFormatException e) {
             return;
         }
