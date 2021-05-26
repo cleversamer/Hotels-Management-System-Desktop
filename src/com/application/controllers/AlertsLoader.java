@@ -3,6 +3,14 @@ package com.application.controllers;
 import javafx.scene.control.Alert;
 
 public class AlertsLoader {
+    
+    public static void invalidNumberOfRooms() {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Not allowed");
+        alert.setHeaderText("Operation is not allowed, you can add a maximum of 50 rooms each time.");
+        alert.setContentText("Please try again.");
+        alert.show();
+    }
 
     public static void invalidOwner() {
         Alert alert = new Alert(Alert.AlertType.ERROR);
