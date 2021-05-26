@@ -49,6 +49,7 @@ public class EditPasswordController {
             AlertsLoader.invalidPassword();
             return;
         }
+        Data.thereAreChanges = true;
         stage.close();
     }
 
