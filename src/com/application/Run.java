@@ -35,6 +35,15 @@ public class Run extends Application {
 
     @Override
     public void stop() {
-        Data.exportData();
+        if (Data.thereAreChanges) {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Apply changes");
+            alert.setHeaderText("Do you want to apply changes?");
+            alert.setContentText("Press OK to apply changes.");
+
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.isPresent() && result.get() == ButtonType.OK)
+                Data.exportData();
+        }
     }
 }
