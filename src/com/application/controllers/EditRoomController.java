@@ -63,6 +63,7 @@ public class EditRoomController implements Initializable {
         Data.room.setOwner(this.owner.getText());
         Data.room.setPrice(price);
         Data.refreshRoomInfo();
+        Data.thereAreChanges = true;
         stage.close();
     }
 }
