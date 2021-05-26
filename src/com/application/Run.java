@@ -22,7 +22,7 @@ public class Run extends Application {
     public void start(Stage primaryStage) {
         try {
             Parent root = FXMLLoader.load(LoginController.LOCATION);
-            primaryStage.setScene(new Scene(root, 400, 250));
+            primaryStage.setScene(new Scene(root, 430, 240));
             primaryStage.setResizable(false);
             primaryStage.setTitle("Login");
             primaryStage.getIcons().add(new Image(getClass().getResource("icon.jpg").toString()));
