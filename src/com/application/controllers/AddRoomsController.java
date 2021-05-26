@@ -53,6 +53,7 @@ public class AddRoomsController {
         }
         Data.hotel.addRooms(newRooms);
         Data.refreshHotelInfo();
+        Data.thereAreChanges = true;
         stage.close();
     }
 }
