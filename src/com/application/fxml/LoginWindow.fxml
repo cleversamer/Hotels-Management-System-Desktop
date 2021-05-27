@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="244.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.controllers.LoginController">
+    <Label layoutX="102.0" layoutY="21.0" text="Hotels Management System">
+        <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+        </font>
+    </Label>
+   <ComboBox fx:id="hotels" layoutX="14.0" layoutY="71.0" onAction="#handleHotels" prefHeight="25.0" prefWidth="120.0" promptText="Hotels" />
+    <TextField fx:id="username" layoutX="149.0" layoutY="71.0" promptText="Username" />
+    <PasswordField fx:id="password" layoutX="149.0" layoutY="112.0" promptText="Password" />
+    <Button layoutX="183.0" layoutY="152.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="80.0" text="Log in" />
+    <Label layoutX="163.0" layoutY="190.0" text="or" />
+    <Button layoutX="183.0" layoutY="186.0" mnemonicParsing="false" onAction="#signup" prefHeight="25.0" prefWidth="80.0" text="Sign up" />
+   <Label layoutX="5.0" layoutY="228.0" text="Presented by: Samer Al-Sa'dawi" />
+   <Hyperlink layoutX="346.0" layoutY="225.0" onAction="#handleTwitterHyperlink" text="Twitter" />
+   <Hyperlink layoutX="391.0" layoutY="225.0" onAction="#handleGithubHyperlink" text="GitHub" />
+</AnchorPane>
