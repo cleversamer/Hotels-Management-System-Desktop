@@ -1,5 +1,5 @@
 # Hotels Management System
-Simple Hotels Management System - JavaFX Application
+Hotels Management System - JavaFX Application
 * Does this repo deserve a star? I hope that.
 * Let's talk about what can my program do?
 1. Register an account to manage a hotel.
