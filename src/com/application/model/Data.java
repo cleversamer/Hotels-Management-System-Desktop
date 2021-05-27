@@ -67,7 +67,7 @@ public class Data {
     public static void importData() {
         printingData = false;
         try {
-            ObjectInputStream data = new ObjectInputStream(new FileInputStream("data.txt"));
+            ObjectInputStream data = new ObjectInputStream(new FileInputStream("hotels.dat"));
             Hotel hotel;
             while ((hotel = (Hotel) data.readObject()) != null)
                 hotels.add(hotel);
@@ -79,7 +79,7 @@ public class Data {
     public static void exportData() {
         printingData = false;
         try {
-            ObjectOutputStream data = new ObjectOutputStream(new FileOutputStream("data.txt"));
+            ObjectOutputStream data = new ObjectOutputStream(new FileOutputStream("hotels.dat"));
             for (Hotel hotel : hotels)
                 data.writeObject(hotel);
         } catch (IOException ignored) {
