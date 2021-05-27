@@ -27,7 +27,7 @@ public class AddRoomsController {
         try {
             stage = new Stage();
             Parent root = FXMLLoader.load(LOCATION);
-            stage.setScene(new Scene(root, 200, 75));
+            stage.setScene(new Scene(root, 275, 75));
             stage.setTitle("Add");
             stage.setResizable(false);
             stage.getIcons().add(new Image(Run.class.getResource("icon.jpg").toString()));
