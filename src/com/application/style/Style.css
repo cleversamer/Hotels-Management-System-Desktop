@@ -1,0 +1,35 @@
+.root {
+    -fx-background-color: #7f7f7f;
+}
+
+.button,
+.combo-box {
+    -fx-background-color: #eee;
+    -fx-text-fill: #444;
+}
+
+.label {
+    -fx-text-fill: #eee;
+    -fx-font-size: 12px;
+    -fx-font-weight: 400;
+}
+
+#title {
+    -fx-text-fill: #444;
+    -fx-font-family: "Comic Sans MS bold";
+    -fx-font-size: 18px;
+}
+
+.button:hover,
+ .combo-box:hover {
+    -fx-background-color: #fff;
+}
+
+.label:hover {
+    -fx-text-fill: #fff;
+    -fx-font-size: 13px;
+}
+
+#dollar {
+    -fx-font-size: 14px;
+}
