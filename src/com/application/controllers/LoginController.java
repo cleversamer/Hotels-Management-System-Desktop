@@ -37,7 +37,7 @@ public class LoginController implements Initializable {
         try {
             Parent root = FXMLLoader.load(LOCATION);
             Run.stage.setScene(new Scene(root, 446, 250));
-            Run.stage.setTitle("Login");
+            Run.stage.setTitle("V1.12 Login");
         } catch (MalformedURLException e) {
             System.out.println("MalformedURLException");
         } catch (IOException e) {
