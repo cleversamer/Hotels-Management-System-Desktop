@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="240.0" prefWidth="400.0" stylesheets="@../style/Style.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.application.controllers.SignUpController">
+    <VBox alignment="CENTER" layoutX="126.0" layoutY="25.0" spacing="10.0">
+        <Label id="title" text="Sign Up">
+            <font>
+                <Font name="Comic Sans MS Bold" size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="username" promptText="Username"/>
+        <PasswordField fx:id="password" promptText="Password"/>
+        <TextField fx:id="rooms" promptText="Rooms"/>
+        <Button mnemonicParsing="false" onAction="#signup" prefHeight="25.0" prefWidth="80.0" text="Sign Up"/>
+        <Button mnemonicParsing="false" onAction="#login" prefWidth="80.0" text="Login"/>
+    </VBox>
+    <Label layoutX="285.0" layoutY="63.0" text="(3-32 chars)"/>
+    <Label layoutX="285.0" layoutY="99.0" text="(8-32 chars)"/>
+    <Label layoutX="285.0" layoutY="133.0" text="(1-500 available)"/>
+</AnchorPane>

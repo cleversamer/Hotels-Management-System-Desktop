@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="background" prefHeight="244.0" prefWidth="446.0" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.controllers.LoginController">
+    <Label id="title" layoutX="102.0" layoutY="21.0" text="Hotels Management System">
+        <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+        </font>
+    </Label>
+    <ComboBox id="hotels" fx:id="hotels" layoutX="14.0" layoutY="72.0" onAction="#handleHotels" prefHeight="25.0" prefWidth="120.0" promptText="Hotels" />
+    <TextField fx:id="username" layoutX="145.0" layoutY="72.0" prefHeight="25.0" prefWidth="167.0" promptText="Username" />
+    <PasswordField fx:id="password" layoutX="145.0" layoutY="113.0" prefHeight="25.0" prefWidth="167.0" promptText="Password" />
+    <Button layoutX="145.0" layoutY="152.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="80.0" text="Log in" />
+    <Button layoutX="232.0" layoutY="152.0" mnemonicParsing="false" onAction="#signup" prefHeight="25.0" prefWidth="80.0" text="Sign up" />
+    <Label id="license" layoutX="5.0" layoutY="228.0" text="© 2021 Samer Al-Sa'dawi.  All rights reserved." textFill="#eeeeee" />
+    <Hyperlink layoutX="346.0" layoutY="225.0" onAction="#handleTwitterHyperlink" text="Twitter" textFill="#0000ee" />
+    <Hyperlink layoutX="391.0" layoutY="225.0" onAction="#handleGithubHyperlink" text="GitHub" textFill="#0000ee" />
+</AnchorPane>

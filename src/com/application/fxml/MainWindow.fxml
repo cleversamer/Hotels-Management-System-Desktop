@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane id="background" prefHeight="282.0" prefWidth="660.0" stylesheets="@../style/Style.css"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.application.controllers.MainController">
+    <Separator layoutX="15.0" layoutY="23.0" prefHeight="5.0" prefWidth="33.0"/>
+    <Label layoutX="59.0" layoutY="15.0" text="Status"/>
+    <Separator layoutX="103.0" layoutY="23.0" prefHeight="5.0" prefWidth="88.0"/>
+    <VBox layoutX="15.0" layoutY="43.0" prefHeight="156.0" prefWidth="177.0" spacing="15.0">
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="25.0" prefWidth="177.0">
+            <Label fx:id="name" text="Name:"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="25.0" prefWidth="177.0">
+            <Label fx:id="created" text="Created:"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+            <Label fx:id="rooms" prefHeight="17.0" prefWidth="125.0" text="Rooms:"/>
+            <Button mnemonicParsing="false" onAction="#addRooms" prefWidth="60.0" text="Add"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+            <Label fx:id="available" prefWidth="125.0" text="Available:"/>
+            <Button mnemonicParsing="false" onAction="#viewAvailableRooms" prefWidth="60.0" text="View"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+            <Label fx:id="reserved" prefHeight="17.0" prefWidth="125.0" text="Reserved:"/>
+            <Button mnemonicParsing="false" onAction="#viewReservedRooms" prefHeight="25.0" prefWidth="60.0"
+                    text="View"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="25.0" prefWidth="177.0">
+            <Label prefHeight="17.0" prefWidth="125.0" text="Password:"/>
+            <Button mnemonicParsing="false" onAction="#editPassword" prefWidth="60.0" text="Edit"/>
+        </HBox>
+    </VBox>
+    <Separator layoutX="202.0" layoutY="36.0" orientation="VERTICAL" prefHeight="140.0" prefWidth="5.0"/>
+    <Separator layoutX="215.0" layoutY="23.0" prefHeight="5.0" prefWidth="33.0"/>
+    <Label layoutX="258.0" layoutY="15.0" text="Manage Room"/>
+    <Separator layoutX="346.0" layoutY="22.0" prefHeight="5.0" prefWidth="65.0"/>
+    <VBox layoutX="215.0" layoutY="41.0" spacing="10.0">
+        <HBox spacing="10.0">
+            <TextField fx:id="fieldRoomOwner" prefHeight="25.0" prefWidth="150.0" promptText="Room Owner"/>
+            <TextField fx:id="fieldRoomID" prefHeight="25.0" prefWidth="40.0" promptText="ID"/>
+        </HBox>
+        <HBox spacing="10.0">
+            <Button mnemonicParsing="false" onAction="#search" prefWidth="95.0" text="Search"/>
+            <Button mnemonicParsing="false" onAction="#clearResults" prefWidth="95.0" text="Clear Results"/>
+        </HBox>
+        <HBox>
+            <Label text="Result"/>
+        </HBox>
+        <HBox>
+            <ComboBox id="hotels" fx:id="roomsFound" onAction="#handleRoomsFound" prefWidth="200.0"/>
+        </HBox>
+    </VBox>
+    <Separator layoutX="214.0" layoutY="179.0" prefHeight="5.0" prefWidth="74.0"/>
+    <Label layoutX="294.0" layoutY="171.0" text="Hotel"/>
+    <Separator layoutX="329.0" layoutY="179.0" prefHeight="5.0" prefWidth="88.0"/>
+    <Separator layoutX="202.0" layoutY="186.0" orientation="VERTICAL" prefHeight="85.0" prefWidth="6.0"/>
+    <VBox layoutX="215.0" layoutY="203.0" prefHeight="65.0" prefWidth="200.0" spacing="15.0">
+        <HBox spacing="40.0">
+            <Button mnemonicParsing="false" onAction="#reserveAll" prefWidth="80.0" text="Reserve All"/>
+            <Button mnemonicParsing="false" onAction="#emptyAll" prefWidth="80.0" text="Empty All"/>
+        </HBox>
+        <HBox spacing="40.0">
+            <Button mnemonicParsing="false" onAction="#removeAll" prefWidth="80.0" text="Remove All"/>
+            <Button mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="80.0" text="Log out"/>
+        </HBox>
+    </VBox>
+    <Separator layoutX="421.0" layoutY="36.0" orientation="VERTICAL" prefHeight="230.0" prefWidth="5.0"/>
+    <Separator layoutX="430.0" layoutY="21.0" prefHeight="5.0" prefWidth="33.0"/>
+    <Label layoutX="474.0" layoutY="15.0" text="Room Details"/>
+    <Separator layoutX="554.0" layoutY="22.0" prefHeight="5.0" prefWidth="88.0"/>
+    <VBox layoutX="430.0" layoutY="43.0" prefHeight="152.0" prefWidth="214.0" spacing="15.0">
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="25.0" prefWidth="214.0">
+            <Label fx:id="roomID" text="Room ID:"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0">
+            <Label fx:id="price" prefHeight="17.0" prefWidth="157.0" text="Price:"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0">
+            <Label fx:id="status" text="Status:"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0">
+            <Label fx:id="reservedOn" text="Reserved on:"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0">
+            <Label fx:id="owner" prefWidth="157.0" text="Owner:"/>
+        </HBox>
+    </VBox>
+    <HBox layoutX="432.0" layoutY="243.0" spacing="10.0">
+        <Button fx:id="reserve" disable="true" mnemonicParsing="false" onAction="#reserve" prefHeight="25.0"
+                prefWidth="60.0" text="Reserve"/>
+        <Button fx:id="checkout" disable="true" mnemonicParsing="false" onAction="#checkout" prefHeight="25.0"
+                prefWidth="70.0" text="Checkout"/>
+        <Button fx:id="edit" disable="true" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="60.0"
+                text="Edit"/>
+    </HBox>
+</AnchorPane>

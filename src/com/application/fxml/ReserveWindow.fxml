@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="220.0" prefWidth="300.0" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.controllers.ReserveController">
+    <Label id="title" layoutX="116.0" layoutY="14.0" text="Reserve">
+        <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+        </font>
+    </Label>
+    <VBox alignment="TOP_CENTER" layoutX="50.0" layoutY="60.0" prefWidth="200.0" spacing="10.0">
+        <Label fx:id="roomID" text="Room ID:" />
+        <Label fx:id="price" text="Price:" />
+        <Label fx:id="status" text="Status:" />
+        <TextField fx:id="owner" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="170.0" promptText="Owner" />
+    </VBox>
+    <Button layoutX="110.0" layoutY="181.0" mnemonicParsing="false" onAction="#reserve" prefHeight="25.0" prefWidth="80.0" text="Reserve" />
+</AnchorPane>
