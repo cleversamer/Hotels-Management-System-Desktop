@@ -25,7 +25,7 @@ public class Run extends Application {
             primaryStage.setScene(new Scene(root, 430, 240));
             primaryStage.setResizable(false);
             primaryStage.setTitle("Login");
-            primaryStage.getIcons().add(new Image(getClass().getResource("icon.jpg").toString()));
+            primaryStage.getIcons().add(new Image(getClass().getResource("icon.png").toString()));
             stage = primaryStage;
             stage.show();
         } catch (Exception e) {
