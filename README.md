@@ -12,9 +12,9 @@ Hotels Management System - JavaFX Application
 * TIP: I made a default account with [admin, admin] login info, you can use it or sign up a new account.
 
 * Illustrative pictures:
-* ![1](https://user-images.githubusercontent.com/73291969/119967024-9af99b00-bfb4-11eb-9bc2-ae9ffc4fba2c.png)
-* ![2](https://user-images.githubusercontent.com/73291969/119967283-dac08280-bfb4-11eb-85cd-a97a7ade87ca.png)
-* ![3](https://user-images.githubusercontent.com/73291969/119967319-e57b1780-bfb4-11eb-88d7-50e1b4d043f0.png)
-* ![5](https://user-images.githubusercontent.com/73291969/119967349-ef9d1600-bfb4-11eb-9596-58b62d37ad01.png)
-* ![6](https://user-images.githubusercontent.com/73291969/119967366-f4fa6080-bfb4-11eb-8378-96c5ef76dd5c.png)
-* ![4](https://user-images.githubusercontent.com/73291969/119967399-fb88d800-bfb4-11eb-881d-a90a05652193.png)
+* ![1](https://user-images.githubusercontent.com/73291969/119976863-67247280-bfc0-11eb-8518-e8780415788c.png)
+* ![2](https://user-images.githubusercontent.com/73291969/119976877-6ab7f980-bfc0-11eb-988a-ce568b730197.png)
+* ![3](https://user-images.githubusercontent.com/73291969/119976887-6f7cad80-bfc0-11eb-9d87-da8f49edb1c3.png)
+* ![4](https://user-images.githubusercontent.com/73291969/119976901-73a8cb00-bfc0-11eb-97f0-11bab2a70f9f.png)
+* ![5](https://user-images.githubusercontent.com/73291969/119976909-773c5200-bfc0-11eb-9915-9dec78e460fb.png)
+* ![6](https://user-images.githubusercontent.com/73291969/119976921-7acfd900-bfc0-11eb-862e-0d7b0f242256.png)
