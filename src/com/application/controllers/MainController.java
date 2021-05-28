@@ -39,7 +39,7 @@ public class MainController implements Initializable {
         try {
             Parent root = FXMLLoader.load(LOCATION);
             Run.stage.setScene(new Scene(root, 660, 282));
-            Run.stage.setTitle("Main");
+            Run.stage.setTitle("V1.12 Main");
         } catch (MalformedURLException e) {
             System.out.println("MalformedURLException");
         } catch (IOException e) {
