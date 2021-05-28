@@ -28,7 +28,7 @@ public class SignUpController {
         try {
             Parent root = FXMLLoader.load(LOCATION);
             Run.stage.setScene(new Scene(root, 400, 250));
-            Run.stage.setTitle("Sign Up");
+            Run.stage.setTitle("V1.12 Sign Up");
         } catch (MalformedURLException e) {
             System.out.println("MalformedURLException");
         } catch (IOException e) {
