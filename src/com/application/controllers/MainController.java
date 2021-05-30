@@ -102,7 +102,7 @@ public class MainController implements Initializable {
     public void search() {
         int roomID;
         try {
-            roomID = Integer.parseInt(this.fieldRoomID.getText());
+            roomID = Integer.parseInt(this.fieldRoomID.getText().trim());
         } catch (NumberFormatException e) {
             roomID = -1;
         }
