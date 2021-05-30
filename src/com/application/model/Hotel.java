@@ -82,6 +82,7 @@ public class Hotel implements Serializable {
     }
 
     public List<Room> findRoom(String roomOwner, int roomID) {
+        roomOwner = roomOwner.trim();
         if (roomOwner.isEmpty() && roomID <= 0)
             return null;
 
