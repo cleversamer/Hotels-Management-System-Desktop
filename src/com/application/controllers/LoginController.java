@@ -81,7 +81,7 @@ public class LoginController implements Initializable {
     @FXML
     public void handleTwitterHyperlink() {
         try {
-            Desktop.getDesktop().browse(new URI("https://twitter.com/ssadawi__"));
+            Desktop.getDesktop().browse(new URI("https://twitter.com/cleversamerr"));
         } catch (URISyntaxException | IOException ignored) {
         }
     }
@@ -89,7 +89,7 @@ public class LoginController implements Initializable {
     @FXML
     public void handleGithubHyperlink() {
         try {
-            Desktop.getDesktop().browse(new URI("https://github.com/ssadawi"));
+            Desktop.getDesktop().browse(new URI("https://github.com/cleversamerr"));
         } catch (URISyntaxException | IOException ignored) {
         }
     }
