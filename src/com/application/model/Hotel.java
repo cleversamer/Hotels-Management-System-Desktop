@@ -8,6 +8,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Hotel implements Serializable {
+    private static final int MIN_PASSWORD_LENGTH = 8;
+    private static final int MAX_PASSWORD_LENGTH = 32;
+    private static final int MIN_OWNER_LENGTH = 5;
+    private static final int MAX_OWNER_LENGTH = 26;
+    private static final int INITIAL_ROOM_ID = 1;
+
 
     private final Date dateCreated;
     private final List<Room> roomsList;
@@ -28,7 +34,7 @@ public class Hotel implements Serializable {
     }
 
     private void initialize() {
-        for (int roomID = 1; roomID <= rooms; roomID++)
+        for (int roomID = INITIAL_ROOM_ID; roomID <= rooms; roomID++)
             roomsList.add(new Room("Empty", roomID, 0));
         availableRoomsList.addAll(roomsList);
     }
@@ -45,7 +51,7 @@ public class Hotel implements Serializable {
 
     private boolean valid(String owner) {
         owner = owner.trim();
-        return !owner.isEmpty() && owner.length() >= 5 && owner.length() <= 26;
+        return !owner.isEmpty() && owner.length() >= MIN_OWNER_LENGTH && owner.length() <= MAX_OWNER_LENGTH;
     }
 
     public void reserveAll() {
@@ -83,7 +89,7 @@ public class Hotel implements Serializable {
 
     public List<Room> findRoom(String roomOwner, int roomID) {
         roomOwner = roomOwner.trim();
-        if (roomOwner.isEmpty() && roomID <= 0)
+        if (roomOwner.isEmpty() && roomID <= INITIAL_ROOM_ID)
             return null;
 
         List<Room> rooms = new LinkedList<>();
@@ -153,7 +159,7 @@ public class Hotel implements Serializable {
 
     public boolean setPassword(String password) {
         password = password.trim();
-        if (password.isEmpty() || password.length() < 8 || password.length() > 32)
+        if (password.isEmpty() || password.length() < MIN_PASSWORD_LENGTH || password.length() > MAX_PASSWORD_LENGTH)
             return false;
         for (int i = 0; i < password.length(); i++)
             if (password.charAt(i) == ' ')
